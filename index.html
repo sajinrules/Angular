@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angularjs Test Apps</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="scripts/controllers/firstCtrl.js"></script>
+		<script type="text/javascript" src="scripts/controllers/secondCtrl.js"></script>
+		<script type="text/javascript" src="scripts/services/BtwnCtrl.js"></script>
+		<script type="text/javascript" src="bower_components/angular-socket-io/socket.js"></script>
+		
+	</head>
+	<body>
+		<div ng-app="testApp">
+			
+			<div ng-controller="firstCtrl">
+				<input type="text" ng-model="data.message">
+				<span>From First Controller :{{data.message}}</span>	
+			</div>
+			
+			<div ng-controller="secondCtrl">
+				<input type="text" ng-model="data.message">
+				<span>From Second Controller :{{data.message}}</span>	
+			</div>
+			<!-- <h3 ng-bind="data.name"></h3> -->
+		</div>	
+			
+	</body>
+	
+	
+</html>
