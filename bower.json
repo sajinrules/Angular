@@ -13,6 +13,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular-socket-io": "~0.7.0"
+    "angular-socket-io": "~0.7.0",
+    "react": "~0.14.3"
   }
 }
